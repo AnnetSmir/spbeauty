@@ -9,16 +9,18 @@ const AddressesWrapper = styled.div`
     border-radius: 8px;
     padding: 24px;
 `;
-
+const ContentWrapper = styled.div`
+    height:266px;
+`;   
 function Addresses() {
     return (
         <AddressesWrapper>
-            <div className='d-inline-flex flex-column w-100 h-100 gap-4'>
+            <div className='d-inline-flex flex-column w-100 gap-4'>
                 <div className='title'>Адреса заведений</div>
-                <div className='d-inline-flex flex-column gap-2'>
+                <ContentWrapper className='d-inline-flex flex-column gap-2'>
                     <ListElement>Санкт-Петербург, Невский пр-т. 28</ListElement>
                     <ListElement>Санкт-Петербург, Казанская ул, 7</ListElement>
-                </div>
+                </ContentWrapper>
                 <SecondaryButton>Добавить филиал</SecondaryButton>
             </div>
         </AddressesWrapper>
