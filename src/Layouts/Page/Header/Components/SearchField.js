@@ -8,6 +8,9 @@ const WrapperInput = styled.div`
     border-radius: 24px;
     border: 1px solid #E2E8F0;
     background-color: #F8FAFC;
+    &:hover {
+        opacity: 0.8;
+    }
 `;
 
 const Input = styled.input`
@@ -16,9 +19,6 @@ const Input = styled.input`
     background: none;
     color: #94A3B8;
     width: 100%;
-    &:hover {
-        background: linear-gradient(180deg, #DFEAF1 0%, #CFDDE8 100%);
-    }
     &:focus {
         background: white;
     }
