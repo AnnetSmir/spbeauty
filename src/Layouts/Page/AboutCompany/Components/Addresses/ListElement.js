@@ -11,16 +11,21 @@ const Option = styled.div`
     background-color: none;
     color: #0F172A;
 `;
-const OptionLeftWrapper = styled.div`
+const OptionWrapper = styled.div`
     padding-right:12px;
+`;
+const ButtonRightWrapper = styled.div`
+    margin-right:4px;
 `;
 function ListElement(props) {
     return (
         <div className='d-flex flex-row align-items-center align-self-stretch'>
-            <OptionLeftWrapper className='flex-grow-1'>
+            <OptionWrapper className='flex-grow-1'>
                 <Option className='pе=0 my-3 text-rg'>{props.children}</Option>   
-            </OptionLeftWrapper>
+            </OptionWrapper>
+            <ButtonRightWrapper>
             <IconOnlyButton icon={<EditIcon/>}/>
+            </ButtonRightWrapper>
             <IconOnlyButton icon={<RemoveIcon/>}/>
         </div>
     );
