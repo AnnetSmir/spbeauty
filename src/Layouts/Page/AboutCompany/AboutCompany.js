@@ -9,7 +9,7 @@ function AboutCompany() {
              <div className="col-6">
               <General/>  {/* Основная информация вроде названия, типа и телефона */}
               </div>
-             <div className="col-6">
+             <div className="col-6 d-flex justify-content-end">
                 <Addresses/> {/* Список доступных адресов заведений */}
              </div>
             </div>

@@ -11,13 +11,14 @@ const Select = styled.select`
     border: 1px solid #E2E8F0;
     background-color: #F8FAFC;
     color: #0F172A;
+    width: 447px;
     }
 `;
 
 function TitledSelector({title, options}) {
     const Title = title === undefined ? 
         (<div></div>) : 
-        (<div>{title}</div>);
+        (<div className="text-caption-rg">{title}</div>);
     return (
         <div className='d-flex flex-column gap-2'>
             {Title}

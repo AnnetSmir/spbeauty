@@ -3,7 +3,7 @@ import SecondaryButton from "../../../../../Components/SecondaryButton";
 import ListElement from "./ListElement";
 
 const AddressesWrapper = styled.div`
-    max-width:453px;
+    width:453px;
     min-height:420px;
     border: 1px solid rgba(100, 116, 139, 0.12);
     border-radius: 8px;
